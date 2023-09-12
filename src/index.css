@@ -1,0 +1,70 @@
+* {
+    /* Text rendering */
+    text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -webkit-text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* :focus {
+    outline: none !important;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: 'Inter var', Roboto, Helvetica Neue, Arial, sans-serif;
+   /* background-color: #121212; */
+   background-color: #ffffff;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-x: hidden;
+    font-feature-settings: "salt";
+}
+
+html, body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+/* Medium Devices, Desktops Only */
+@media only screen and (min-width: 992px) {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: rgb(137, 137, 137) #fff;
+    }
+      
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px; /* A altura só é vista quando a rolagem é horizontal */
+    }
+      
+    ::-webkit-scrollbar-track {
+        background: #fff;
+        padding: 12px;
+    }
+      
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(137, 137, 137);
+        border-radius: 20px;
+        border: 2px solid #fff;
+    }
+    
+    ::-webkit-scrollbar-thumb:active {
+        border-radius: 20px;
+    }
+}
